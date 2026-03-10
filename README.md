@@ -33,12 +33,6 @@ This template focuses on **visual design, layout, and user experience**, with mu
 
 ---
 
-## Screenshots
-![Home Section](img/screenshot-home.png)
-*Example of the homepage design*
-
----
-
 ## Future Improvements
 - Connect to a Back-End system for real product data  
 - Add e-commerce functionalities like Cart, Checkout, and Payment  
