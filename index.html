@@ -1,14 +1,68 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Rosan - Handmade Accessories | Necklaces, Bracelets & Knitted Items
+    </title>
+    <meta
+      name="title"
+      content="Rosan - Handmade Accessories | Necklaces, Bracelets & Knitted Items"
+    />
+    <meta
+      name="description"
+      content="Discover unique handmade accessories crafted with love. Shop custom necklaces, bracelets, knitted items, and dream catchers. Every piece tells a story."
+    />
+    <meta
+      name="keywords"
+      content="handmade accessories, custom jewelry, handmade necklaces, handmade bracelets, knitted items, dream catchers, artisan jewelry, handcrafted gifts"
+    />
+    <meta
+      name="author"
+      content="Ahmed Maher - Full Stack Developer at Digilians"
+    />
+    <meta name="creator" content="Ahmed Maher" />
+    <meta name="publisher" content="Digilians Initiative" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rosan-accessories.com/" />
+    <meta
+      property="og:title"
+      content="Rosan - Handmade Accessories | Necklaces, Bracelets & Knitted Items"
+    />
+    <meta
+      property="og:description"
+      content="Discover unique handmade accessories crafted with love. Shop custom necklaces, bracelets, knitted items, and dream catchers. Every piece tells a story."
+    />
+    <meta property="og:image" content="img/flower.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rosan-accessories.com/" />
+    <meta
+      property="twitter:title"
+      content="Rosan - Handmade Accessories | Necklaces, Bracelets & Knitted Items"
+    />
+    <meta
+      property="twitter:description"
+      content="Discover unique handmade accessories crafted with love. Shop custom necklaces, bracelets, knitted items, and dream catchers. Every piece tells a story."
+    />
+    <meta property="twitter:image" content="img/flower.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/flower.png" />
+
+    <!-- Stylesheets -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rosan Accessories</title>
-    <link rel="icon" type="images/x-icon" href="img/flower.png" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="m.css" />
     <link
@@ -17,19 +71,24 @@
     />
   </head>
   <body>
-   <input type="checkbox" id="check" />
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loader"></div>
+    </div>
 
-<header class="header">
-  <div class="menu-btn">
-    <label for="check" class="fa-solid fa-bars"></label>
-  </div>
-      <div class="logo">
-        <span class="sp1">Rosan </span><br /><span class="sp2"
+    <input type="checkbox" id="check" />
+
+    <header class="header">
+      <div class="header__menu-toggle">
+        <label for="check" class="fa-solid fa-bars"></label>
+      </div>
+      <div class="header__logo">
+        <span class="header__logo-main">Rosan </span><br /><span class="header__logo-subtitle"
           >for Handmade Accessories</span
         >
       </div>
 
-      <div class="nav">
+      <div class="header__nav">
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -38,11 +97,10 @@
             <li><a href="#why">Services</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact us</a></li>
-            
           </ul>
         </nav>
       </div>
-      <div class="icons">
+      <div class="header__social-icons">
         <a
           href="https://www.facebook.com"
           class="fa-brands fa-facebook"
@@ -57,210 +115,180 @@
       </div>
     </header>
 
-
-
-    <section class="sec1 sec" id="home">
-      <div class="hero content">
-    <h1>Welcome to Rosan</h1>
-    <p>Handmade with love, warmth, and care — just for you.</p>
-  </div>
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <h1>Welcome to Rosan</h1>
+        <p>Handmade with love, warmth, and care — just for you.</p>
+      </div>
     </section>
 
+    <section class="about" id="about">
+      <div class="about__wrapper">
+        <h2>About Rosan</h2>
+        <span class="section-divider"></span>
 
-
-<section class="sec2 sec"  id="about">
-  <div class="about-wrapper">
-    
-    <h2>About Rosan</h2>
-    <span class="line"></span>
-
-    <p>
-      Rosan is all about handmade accessories crafted with love,
-      care, and attention to detail — because every piece tells a story.
-    </p>
-
-  </div>
-</section>
-
-
-
-
-
-   <section class="sec3 sec" id="products">
-  <div class="products-wrapper">
-    <div class="product-card" style="background-color: #FFE3C5;">
-      <img src="img/OIP.webp" alt="Necklaces" class="product-img">
-      <h3>Necklaces</h3>
-      <p>Handmade necklaces crafted with love.</p>
-    </div>
-    <div class="product-card" style="background-color: #FFD9A8;">
-      <img src="img/OIP2.jpeg" alt="Bracelets" class="product-img">
-      <h3>Bracelets</h3>
-      <p>Beautiful bracelets for every style.</p>
-    </div>
-    <div class="product-card" style="background-color: #FFB57D;">
-      <img src="img/knitted.webp" alt="Knitted Items" class="product-img">
-      <h3>Knitted Items</h3>
-      <p>Warm and cozy handmade knitwear.</p>
-    </div>
-    <div class="product-card" style="background-color: #FF9E5D;">
-      <img src="img/dream.jpg" alt="Dream Catchers" class="product-img">
-      <h3>Dream Catchers</h3>
-      <p>Colorful dream catchers to brighten your room.</p>
-    </div>
-  </div>
-</section>
-
-    <section class="sec4 sec" id="why">
-     <div class="why-wrapper">
-    <h2>Why Rosan?</h2>
-    <span class="line"></span>
-
-    <div class="why-cards">
-      <div class="why-card">
-        <h3>Handmade</h3>
-        <p>Every piece is crafted carefully by hand.</p>
+        <p>
+          Rosan is all about handmade accessories crafted with love, care, and
+          attention to detail — because every piece tells a story.
+        </p>
       </div>
-
-      <div class="why-card">
-        <h3>Unique</h3>
-        <p>No two items are ever exactly the same.</p>
-      </div>
-
-      <div class="why-card">
-        <h3>Custom Orders</h3>
-        <p>Made specially for you, just the way you like.</p>
-      </div>
-    </div>
-  </div></section>
-
-
-
-
-
-
-    <section class="sec5 sec">
-    <div class="services-wrapper">
-    <h2>Our Services</h2>
-    <span class="line"></span>
-
-    <div class="services-cards">
-      <div class="service-card">
-        <i class="fa-solid fa-hand-holding-heart"></i>
-        <h3>Custom Orders</h3>
-        <p>We craft pieces according to your wishes and ideas.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-gift"></i>
-        <h3>Gift Wrapping</h3>
-        <p>Beautifully wrapped, ready to give to your loved ones.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-comments"></i>
-        <h3>Consultation</h3>
-        <p>We guide you to choose the perfect piece for any occasion.</p>
-      </div>
-    </div>
-  </div>
-     </section>
-    <section class="sec6 sec"id="blog">
- <div class="blog-wrapper">
-    <h2>Our Blog</h2>
-    <span class="line"></span>
-
-    <div class="blog-cards">
-
-      <div class="blog-card">
-        <img src="img/R.jpeg" alt="Product Discussion">
-        <h3>Necklace Trends 2026</h3>
-        <p>Explore the latest necklace designs and share your favorite styles with us!</p>
-      </div>
-
-      <div class="blog-card">
-        <img src="img/handmade.jpg" alt="Product Suggestions">
-        <h3>Suggest a New Product</h3>
-        <p>Have an idea for a handmade accessory? Tell us, and it might be in our next collection.</p>
-      </div>
-
-      <div class="blog-card">
-        <img src="img/bracelete.webp" alt="Product Reviews">
-        <h3>Bracelet Reviews</h3>
-        <p>Read detailed reviews of our bracelets — what works best and what customers love.</p>
-      </div>
-
-    </div>
-  </div>
     </section>
 
-<!-- <footer class="footer">
-  <div class="footer-wrapper">
-    
-   
-    <div class="footer-section footer-links-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#why">Services</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-<div class="footer-section footer-about-section">
-  <h3>About Rosan</h3>
-  <p>
-    Handmade accessories crafted with love and care. 
-    Every piece tells a story, just for you.
-  </p>
-</div>
-   
-    <div class="footer-section footer-contact-section">
-      <h3>Contact Us</h3>
-      <p>Email: <a href="mailto:info@rosan.com">info@rosan.com</a></p>
-      <p>Phone: <a href="tel:+201234567890">+20 123 456 7890</a></p>
-     
-    </div>
-<div class="rights">
-    <p class="footer-copy">© 2026 Rosan. All rights reserved.</p></div>
-  </div>
-</footer> -->
-
-
-
-<div class="foter">
-   
-    <div class="footer-section footer-contact-section">
-      <h3>Contact Us</h3>
-      <p><span>Email :</span> <a href="mailto:info@rosan.com">info@rosan.com</a></p>
-      <p><span>Phone :</span> <a href="tel:+201234567890">+20 123 456 7890</a></p>
-     
-    </div>
-
-    <div class="foter_section1">
-
-      
-         <div class="footer-social-icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        
-      </div>
-      
-
-          <p class="footer-copy">Copyright © 2010-2026 Rosan. All rights reserved.</p>
+    <section class="products" id="products">
+      <div class="products__wrapper">
+        <div class="products__card" style="background-color: #ffe3c5">
+          <img src="img/OIP.webp" alt="Necklaces" class="products__card-img" />
+          <h3>Necklaces</h3>
+          <p>Handmade necklaces crafted with love.</p>
         </div>
-    
-    <div class="foter_section2"></div>
-    
-</div>
+        <div class="products__card" style="background-color: #ffd9a8">
+          <img src="img/OIP2.jpeg" alt="Bracelets" class="products__card-img" />
+          <h3>Bracelets</h3>
+          <p>Beautiful bracelets for every style.</p>
+        </div>
+        <div class="products__card" style="background-color: #ffb57d">
+          <img src="img/knitted.webp" alt="Knitted Items" class="products__card-img" />
+          <h3>Knitted Items</h3>
+          <p>Warm and cozy handmade knitwear.</p>
+        </div>
+        <div class="products__card" style="background-color: #ff9e5d">
+          <img src="img/dream.jpg" alt="Dream Catchers" class="products__card-img" />
+          <h3>Dream Catchers</h3>
+          <p>Colorful dream catchers to brighten your room.</p>
+        </div>
+      </div>
+    </section>
 
-</div>
-    
+    <section class="features" id="why">
+      <div class="features__wrapper">
+        <h2>Why Rosan?</h2>
+        <span class="section-divider"></span>
+
+        <div class="features__cards">
+          <div class="features__card">
+            <h3>Handmade</h3>
+            <p>Every piece is crafted carefully by hand.</p>
+          </div>
+
+          <div class="features__card">
+            <h3>Unique</h3>
+            <p>No two items are ever exactly the same.</p>
+          </div>
+
+          <div class="features__card">
+            <h3>Custom Orders</h3>
+            <p>Made specially for you, just the way you like.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__wrapper">
+        <h2>Our Services</h2>
+        <span class="section-divider"></span>
+
+        <div class="services__cards">
+          <div class="services__card">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h3>Custom Orders</h3>
+            <p>We craft pieces according to your wishes and ideas.</p>
+          </div>
+
+          <div class="services__card">
+            <i class="fa-solid fa-gift"></i>
+            <h3>Gift Wrapping</h3>
+            <p>Beautifully wrapped, ready to give to your loved ones.</p>
+          </div>
+
+          <div class="services__card">
+            <i class="fa-solid fa-comments"></i>
+            <h3>Consultation</h3>
+            <p>We guide you to choose the perfect piece for any occasion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog">
+      <div class="blog__wrapper">
+        <h2>Our Blog</h2>
+        <span class="section-divider"></span>
+
+        <div class="blog__cards">
+          <div class="blog__card">
+            <img src="img/R.jpeg" alt="Product Discussion" />
+            <h3>Necklace Trends 2026</h3>
+            <p>
+              Explore the latest necklace designs and share your favorite styles
+              with us!
+            </p>
+          </div>
+
+          <div class="blog__card">
+            <img src="img/handmade.jpg" alt="Product Suggestions" />
+            <h3>Suggest a New Product</h3>
+            <p>
+              Have an idea for a handmade accessory? Tell us, and it might be in
+              our next collection.
+            </p>
+          </div>
+
+          <div class="blog__card">
+            <img src="img/bracelete.webp" alt="Product Reviews" />
+            <h3>Bracelet Reviews</h3>
+            <p>
+              Read detailed reviews of our bracelets — what works best and what
+              customers love.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="footer__contact">
+        <h3>Contact Us</h3>
+        <p>
+          <span>Email :</span>
+          <a href="mailto:info@rosan.com">info@rosan.com</a>
+        </p>
+        <p>
+          <span>Phone :</span> <a href="tel:+201234567890">+20 123 456 7890</a>
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <div class="footer__social-icons">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.x.com" target="_blank"
+            ><i class="fa-brands fa-x"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com" target="_blank"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+
+        <p class="footer__copyright">
+          Copyright © 2010-2026 Rosan. All rights reserved.
+        </p>
+      </div>
+
+      <div class="footer__spacer"></div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
   </body>
 </html>
-
