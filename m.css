@@ -1,3 +1,17 @@
+/* ===== Mobile Responsive Styles ===== */
+
+/* Tablets and Small Laptops */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .products__card {
+    width: 45%;
+  }
+}
+
+/* Tablets and Large Phones */
 @media (max-width: 800px) {
 
   .fa-bars {
@@ -11,36 +25,41 @@
     gap: 15px;
   }
 
+  .header__logo-main {
+    font-size: 26px;
+  }
+
+  .header__logo-subtitle {
+    font-size: 14px;
+  }
+
   .header__nav {
     width: 100%;
     display: none;
-
   }
 
   .header__nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
+    gap: 0;
   }
 
   .header__nav ul li {
     width: 100%;
-   
+    border-bottom: 1px solid #f3a569;
   }
 
   .header__nav a {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 12px 0;
-    font-size: 18px;
-    
+    padding: 15px 0;
+    font-size: 20px;
   }
 
   .header__social-icons {
@@ -48,6 +67,15 @@
   }
 
   /* Mobile Hero Section */
+  .hero {
+    height: 60vh;
+    top: 0;
+  }
+
+  .hero__content {
+    padding: 20px 25px;
+  }
+
   .hero h1 {
     font-size: 32px;
   }
@@ -56,24 +84,78 @@
     font-size: 16px;
   }
 
+  /* Mobile About Section */
+  .about__wrapper {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+
+  .about__wrapper h2 {
+    font-size: 36px;
+  }
+
+  .about__wrapper p {
+    font-size: 18px;
+  }
+
   /* Mobile Product Cards */
+  .products {
+    padding: 30px 15px;
+  }
+
   .products__card {
     width: 100%;
+    max-width: 400px;
+  }
+
+  .products__card-img {
+    height: 250px;
+  }
+
+  .products__card h3 {
+    font-size: 24px;
   }
 
   /* Mobile Feature Cards */
+  .features {
+    padding: 40px 15px;
+  }
+
+  .features__wrapper h2 {
+    font-size: 36px;
+  }
+
   .features__card {
     width: 100%;
+    max-width: 400px;
   }
 
   /* Mobile Service Cards */
+  .services {
+    padding: 40px 15px;
+  }
+
+  .services__wrapper h2 {
+    font-size: 36px;
+  }
+
   .services__card {
     width: 100%;
+    max-width: 400px;
   }
 
   /* Mobile Blog Cards */
+  .blog {
+    padding: 40px 15px;
+  }
+
+  .blog__wrapper h2 {
+    font-size: 36px;
+  }
+
   .blog__card {
     width: 100%;
+    max-width: 400px;
   }
 
   /* Back to top button mobile */
@@ -84,17 +166,8 @@
     height: 45px;
     font-size: 20px;
   }
-}
 
-
-#check:checked ~ .header .header__nav {
-  display: block;
-}
-
-
-
-/* ===== Responsive Footer ===== */
-@media (max-width: 800px) {
+  /* Footer Mobile */
   .footer {
     flex-direction: column;
     height: auto;
@@ -109,6 +182,15 @@
     text-align: center;
   }
 
+  .footer__contact h3 {
+    font-size: 28px;
+  }
+
+  .footer__contact p,
+  .footer__contact a {
+    font-size: 18px;
+  }
+
   .footer__social-icons {
     justify-content: center;
     margin-bottom: 20px;
@@ -116,5 +198,79 @@
 
   .footer__social-icons i {
     margin: 0 15px;
+    font-size: 26px;
   }
+
+  .footer__copyright {
+    font-size: 16px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .header__logo-main {
+    font-size: 22px;
+  }
+
+  .header__logo-subtitle {
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero__content {
+    padding: 15px 20px;
+  }
+
+  .about__wrapper h2,
+  .features__wrapper h2,
+  .services__wrapper h2,
+  .blog__wrapper h2 {
+    font-size: 28px;
+  }
+
+  .about__wrapper p {
+    font-size: 16px;
+  }
+
+  .products__card-img {
+    height: 200px;
+  }
+
+  .products__card h3 {
+    font-size: 22px;
+  }
+
+  .footer__contact h3 {
+    font-size: 24px;
+  }
+
+  .footer__contact p,
+  .footer__contact a {
+    font-size: 16px;
+  }
+
+  .footer__social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Menu Toggle */
+#check:checked ~ .header .header__nav {
+  display: block;
 }
